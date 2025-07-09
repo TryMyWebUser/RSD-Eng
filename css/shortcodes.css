@@ -5,17 +5,17 @@
 .txt-pink{ color: #dd4b39; }
 .txt-ligt-gray{ color: #777; }
 .txt-white{	color: #FFF; }
-.txt-sky-blue{ color: #2a3c68; }
+.txt-sky-blue{ color: #6e992d; }
 
 /*------------------------------------------*/
 /*    Background Color Start
 /*------------------------------------------*/
 .bg-white{ background: #FFF; }
-.bg-light-gray{ background: #DAF3FF; }
+.bg-light-gray{ background: #699a3c; }
 .bg-light-gray-alt{ background: #f7f7f7; }
-.bg-navy-blue{ background: #2a3c68; }
+.bg-navy-blue{ background: #6e992d; }
 .bg-pink{ background: #dd4b39; }
-.bg-sky-blue{ background: #2a3c68; }
+.bg-sky-blue{ background: #6e992d; }
 
 /*------------------------------------------*/
 /*    Background Images Start
@@ -1249,7 +1249,7 @@ a[class*="link-"]:hover:before{
 .team-section-one h3,
 .team-section-two .inner-section h3{
 	font-size: 1.125rem;
-	color: #2a3c68;
+	color: #6e992d;
 	font-weight: 600;
 	line-height: 1.2;
 	margin-bottom: 0;
@@ -1949,7 +1949,7 @@ a[class*="link-"]:hover:before{
 	font-weight:400;
 	text-align:center;
 	top: 0;
-    background: #2a3c68;
+    background: #6e992d;
 	background-size: contain;
     background-position: bottom center;
 }
@@ -2053,7 +2053,7 @@ a[class*="link-"]:hover:before{
     transition: opacity .2s ease-out,visibility .2s ease-out,color .2s ease-out, background-color .2s ease-out, right .1s ease-out, transform 0.4s ease-out;
 }
 #mkdf-back-to-top:hover{
-  background-color: #2a3c68;
+  background-color: #6e992d;
 }
 #mkdf-back-to-top.on {
     opacity: 1;

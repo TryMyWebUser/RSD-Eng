@@ -42,7 +42,7 @@ a:focus {
 }
 .img-business-man {
     position: absolute;
-    bottom: -100px;
+    bottom: 50px;
     left: 0;
 }
 .plumbing_man_group{
@@ -246,7 +246,7 @@ a:focus {
 @media only screen and (min-width: 991.99px) {
 
     .header-fixed.fixed-top{
-        background: #2a3c68;
+        background: #6e992d;
     }
     .header-1 .header-fixed.fixed-top{
         background: #f9f9f9;
@@ -448,7 +448,7 @@ a:focus {
 /*------------------------------------------*/
 
 header{
-    border-bottom: 3px solid #2a3c68;
+    border-bottom: 3px solid #6e992d;
     padding: 0.875rem 0 0;
 }
 
@@ -488,7 +488,7 @@ header{
     margin-bottom: 0;
 }
 .header-1 #search_home{
-    color: #2a3c68;
+    color: #6e992d;
 }
 
 .header-1 .navbar-nav .nav-link{
@@ -505,7 +505,7 @@ header{
 }
 .header-2 #search_home:hover,
 .header-4 #search_home:hover{
-    color: #2a3c68;
+    color: #6e992d;
 }
 .header-2 .light-social-icons a:hover,
 .header-4 .light-social-icons a:hover{
@@ -522,7 +522,7 @@ header{
     color: #191919;
 }
 .header-3 #search_home:hover {
-    color: #2a3c68;
+    color: #6e992d;
 }
 .header-3 .navbar-nav .nav-link{
     color: #333;
@@ -535,7 +535,7 @@ header{
 }
 .header-2 .btco-hover-menu .collapse ul > li:hover > a.nav-link {
     color: rgba(255, 255, 255, 0.7);
-    color: #DAF3FF;
+    color: #699a3c;
 }
 .header-4 .btco-hover-menu .collapse ul > li.nav-item:hover > a{
     color: #FFF;
@@ -620,7 +620,7 @@ header{
     border-width: 3px;
     border-color: rgb(255, 255, 255);
     border-radius: 70px;
-    background-color: #2a3c68;
+    background-color: #6e992d;
     padding: 0.65rem 2rem;
     font-size: 1rem;
     color: rgb(255, 255, 255);
@@ -673,7 +673,7 @@ header{
 /*------------------------------------------*/
 .display-head{
     font-size: 2rem;
-    color: #2a3c68;
+    color: #6e992d;
     font-weight: bold;
     margin-bottom: 0.075rem;
     line-height: 1.2;
@@ -1223,7 +1223,7 @@ h1, h2, h3, h4, h5, h6{
 .client-inner-content {
     color: #041d26;
     line-height: 1.571;
-    background: #DAF3FF;
+    background: #699a3c;
     padding: 1.5rem;
     position: relative;
 }
@@ -1236,7 +1236,7 @@ h1, h2, h3, h4, h5, h6{
     height: 0;
     border-style: solid;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #DAF3FF transparent transparent;
+    border-color: transparent #699a3c transparent transparent;
 }
 .client-inner-content h3{
     font-size: 1.125rem;
@@ -1417,7 +1417,7 @@ h1, h2, h3, h4, h5, h6{
     color: #041d26;
 }
 .light-theme .client-testimonial-single i{
-    background: #2a3c68;
+    background: #6e992d;
     box-shadow: none;
 }
 .light-theme#home-client-single.owl-carousel .owl-item img{
@@ -1463,7 +1463,7 @@ h1, h2, h3, h4, h5, h6{
     padding: 0.875rem 0;
 }
 .blog-wrap-dark .meta-box a:hover{
-    color: #2a3c68;
+    color: #6e992d;
 }
 .blog-wrap-dark .meta-box span,
 .blog-wrap-light .meta-box span,
@@ -1725,7 +1725,7 @@ h1, h2, h3, h4, h5, h6{
     padding: 2.5rem 0;
     color: #FFF;
     font-size: 0.8125rem;
-    background: #2a3c68;
+    background: #6e992d;
     position: relative;
     text-align: center;
     z-index: 99;
@@ -1809,7 +1809,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .footer-logo{
     display: inline-block;
-    background: #DAF3FF;
+    background: #699a3c;
     padding: 0 1.5rem;
     top: 0;
     position: relative;
@@ -1824,6 +1824,7 @@ h1, h2, h3, h4, h5, h6{
     font-style: normal;
     font-weight: 700;
     color: #dd4b39;
+    filter: drop-shadow(0px 0px 1px white);
     line-height: 1.375;
 }
 .bordered-footer .footer-contacts a{
@@ -1870,13 +1871,13 @@ h1, h2, h3, h4, h5, h6{
 }
 .footer-4{
     color: #FFF;
-    background-color: #2a3c68;
+    background-color: #6e992d;
 }
 .footer-4 .bg-overlay{
     background-color: rgba(0, 0, 0, 0.2);
 }
 .footer-4 .copyright-wrap{
-    background: #2a3c68;
+    background: #6e992d;
     text-align: left;
 }
 .footer-4 .bg-white-text{
@@ -2054,7 +2055,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .cbp-l-caption-alignCenter .cbp-l-caption-buttonLeft:hover, 
 .cbp-l-caption-alignCenter .cbp-l-caption-buttonRight:hover{
-    background: #2a3c68;
+    background: #6e992d;
     color: #FFF;
 
 
@@ -2081,7 +2082,7 @@ h1, h2, h3, h4, h5, h6{
     font-weight: bold;
 }
 .social-round a{
-    border-color: #2a3c68;
+    border-color: #6e992d;
     border-style: solid;
     border-width: 1px;
     width: 36px;
@@ -2090,7 +2091,7 @@ h1, h2, h3, h4, h5, h6{
     line-height: 36px;
     text-align: center;
     margin-right: 4px;
-    color: #2a3c68;
+    color: #6e992d;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
