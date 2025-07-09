@@ -32,7 +32,7 @@
             <!-- Our Services Section Start -->
             <section class="wide-tb-100 pb-4">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" data-masonry='{"percentPosition": true }'>
                         <!-- Main Heading Start -->
                         <div class="col-sm-12">
                             <div class="heading-wrap d-flex align-items-center">
@@ -59,6 +59,8 @@
         </main>
 
         <?php include "temp/footer.php" ?>
+
+        <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
 
     </body>
 </html>

@@ -131,7 +131,7 @@
                         <div class="col-sm-12 text-center">
                             <!-- Heading Start -->
                             <div class="display-head">
-                                R.S.D. Engineering Works
+                                RSD Engineering Works
                             </div>
                             <div class="display-lead txt-black">
                                 Mission & Vision
