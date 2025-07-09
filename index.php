@@ -250,6 +250,67 @@
             </section>
             <!-- Who We Are Section End -->
 
+            <!-- Statistics Counter Section Start -->
+            <section class="wide-tb-100 bg-scroll bg-4 pos-rel">
+                <div class="bg-overlay blue opacity-70"></div>
+                <div class="container wide-tb-100">
+                    <div class="row">
+                        <!-- Heading Start -->
+                        <div class="col-sm-12 text-center mb-4">
+                            <div class="display-head">
+                                <span class="txt-pink"> Some Of Our Facts</span>
+                            </div>
+                        </div>
+                        <!-- Heading End -->
+
+                        <!-- Counter Col Start -->
+                        <div class="col counter-style-1 col-6 col-lg-3 col-sm-6">
+                            <span class="counter">24</span>
+                            <span>+</span>
+                            <div>
+                                Years in Bussines
+                            </div>
+                        </div>
+                        <!-- Counter Col End -->
+
+                        <!-- Counter Col Start -->
+                        <div class="col counter-style-1 col-6 col-lg-3 col-sm-6">
+                            <span class="counter">100</span>
+                            <span>+</span>
+                            <div>
+                                Happy Clients
+                            </div>
+                        </div>
+                        <!-- Counter Col End -->
+
+                        <!-- Spacer For Medium -->
+                        <div class="w-100 d-none d-sm-block d-lg-none spacer-60"></div>
+                        <!-- Spacer For Medium -->
+
+                        <!-- Counter Col Start -->
+                        <div class="col counter-style-1 col-6 col-lg-3 col-sm-6">
+                            <span class="counter">80</span>
+                            <span>+</span>
+                            <div>
+                                Projects Completed
+                            </div>
+                        </div>
+                        <!-- Counter Col End -->
+
+                        <!-- Counter Col Start -->
+                        <div class="col counter-style-1 col-6 col-lg-3 col-sm-6">
+                            <span class="counter">20</span>
+                            <span>+</span>
+                            <div>
+                                Trained Staff
+                            </div>
+                        </div>
+                        <!-- Counter Col End -->
+                    </div>
+                </div>
+            </section>
+            <!-- Statistics Counter Section End -->
+
             <!-- Services Slider Start -->
             <section class="wide-tb-100">
                 <div class="container">
