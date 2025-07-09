@@ -1,3 +1,7 @@
+<?php
+    include "libs/load.php";
+?>
+
 <!-- Page loader Start -->
 <div id="pageloader">   
     <div class="loader-item">
@@ -72,19 +76,46 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pipe Lines <i class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="d1.php">Demo</a></li>
+                                <?php
+                                    $category = Operations::getCategory();
+                                    foreach ($category as $cate) {
+                                        if ($cate['page'] === 'pip') {
+                                ?>
+                                <li><a class="dropdown-item" href="d1.php?data=<?= $cate['category'] ?>"><?= $cate['category'] ?></a></li>
+                                <?php
+                                        }
+                                    }
+                                ?>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fabrication <i class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="d2.php">Shed Work</a></li>
+                                <?php
+                                    $category = Operations::getCategory();
+                                    foreach ($category as $cate) {
+                                        if ($cate['page'] === 'fab') {
+                                ?>
+                                <li><a class="dropdown-item" href="d2.php?data=<?= $cate['category'] ?>"><?= $cate['category'] ?></a></li>
+                                <?php
+                                        }
+                                    }
+                                ?>
                             </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Erection <i class="icofont-rounded-down"></i></a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="d3.php">Machine Chute</a></li>
+                                <?php
+                                    $category = Operations::getCategory();
+                                    foreach ($category as $cate) {
+                                        if ($cate['page'] === 'ere') {
+                                ?>
+                                <li><a class="dropdown-item" href="d3.php?data=<?= $cate['category'] ?>"><?= $cate['category'] ?></a></li>
+                                <?php
+                                        }
+                                    }
+                                ?>
                             </ul>
                         </li>
                         <li class="nav-item">

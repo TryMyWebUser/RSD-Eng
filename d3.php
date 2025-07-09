@@ -1,3 +1,12 @@
+<?php
+
+    include "libs/load.php";
+
+    $conn = Database::getConnect();
+    $products = Operations::getErection($conn);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -45,12 +54,17 @@
                         <!-- Main Heading End -->
 
                         <!-- Services Items Start -->
+                        <?php
+                            if (!empty($products)) {
+                                foreach ($products as $pro) {
+                        ?>
                         <div class="col-md-6 col-lg-4"> 
                             <div class="service-page-item">
-                                <img src="images/services/service_img_5.jpg" alt="">
-                                <h3><a href="#">Machine Chute</a></h3>
+                                <img src="images/<?= $pro['img'] ?>" alt="Product Images">
+                                <h3><a><?= $pro['name'] ?></a></h3>
                             </div>
                         </div>
+                        <?php } } else { echo "<p>Datas Not Found!</p>"; } ?>
                         <!-- Services Items End -->
                     </div>
                 </div>

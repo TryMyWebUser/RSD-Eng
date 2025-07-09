@@ -6,7 +6,7 @@ spl_autoload_register(function ($class) {
 });
 
 // Prevent browser caching
-header("Cache-Control: no-cache, must-revalidate");
-header("Pragma: no-cache");
+// header("Cache-Control: no-cache, must-revalidate");
+// header("Pragma: no-cache");
 
 ?>

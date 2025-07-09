@@ -29,57 +29,52 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <?php include "temp/head.php"; ?>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+        <?php include "temp/head.php" ?>
+
     </head>
 
     <body>
-        <div class="preloader">
-                <div class="lds-ripple">
-                    <div class="lds-pos"></div>
-                    <div class="lds-pos"></div>
-                </div>
-            </div>
-            <div id="main-wrapper" data-theme="light" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed" data-boxed-layout="full">
-                <?php include "temp/header.php" ?>
-                <?php include "temp/sideheader.php"; ?>
+        <?php include "temp/header.php" ?>
 
-                <div class="page-wrapper">
-                    <!-- Form Start -->
-                    <div class="container-fluid pt-4 px-4">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-8 col-lg-6">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Category Uploads</h4>
-                                        <form method="POST">
-                                            <div class="form-group my-4">
-                                                <select class="form-select mr-sm-2" name="page" required>
-                                                    <option>Select The Page</option>
-                                                    <option value="pro">Products Page</option>
-                                                    <option value="job">Job Work Page</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group mb-4">
-                                                <label class="form-label">Category?</label>
-                                                <input type="text" class="form-control" name="category" required>
-                                            </div>
-                                            <button type="submit" name="submit" class="btn btn-primary">Upload</button>
-                                        </form>
+        <div id="content">
+
+            <?php include "temp/sideheader.php" ?>
+
+            <!-- Form Start -->
+            <div class="container-fluid pt-4 px-4">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 col-lg-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Category Uploads</h4>
+                                <p class="text-<?= $error ? 'success' : 'danger' ?>"><?= $error ?></p>
+                                <form method="POST">
+                                    <div class="form-group my-4">
+                                        <select class="form-select mr-sm-2" name="page" required>
+                                            <option selected disabled>Select The Page</option>
+                                            <option value="pip">Pipe Lines</option>
+                                            <option value="fab">Fabrication</option>
+                                            <option value="ere">Erection</option>
+                                        </select>
                                     </div>
-                                </div>
+                                    <div class="form-group mb-4">
+                                        <label class="form-label">Category?</label>
+                                        <input type="text" class="form-control" name="category" required>
+                                    </div>
+                                    <button type="submit" name="submit" class="btn btn-primary">Upload</button>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <!-- Form End -->
-                    <footer class="footer text-center text-muted">Designed and Developed by <a href="https://trymywebsites.com/">Trymywebsites</a>.</footer>
                 </div>
-
             </div>
-
-            <?php include "temp/footer.php"; ?>
         </div>
-    </body>
 
+        <?php include "temp/footer.php"; ?>
+
+    </body>
 </html>

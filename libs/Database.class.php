@@ -13,7 +13,7 @@ class Database
             $password = "";
             $dbname = "admin 1";
             // $server = "localhost";
-            // $username = "trymywebsites_admin";
+            // $username = "trymywebsites_admin1";
             // $password = "admin@2025";
             // $dbname = "trymywebsites_admin_db";
 
@@ -30,7 +30,7 @@ class Database
                 Database::$conn = $connection;
                 return Database::$conn;
             }
-
+        } else {
             return Database::$conn;
         }
     }

@@ -30,15 +30,45 @@ class Operations
         return iterator_to_array($result);
     }
 
+    public static function getFabChecker($conn)
+    {
+        $sql = "SELECT * FROM `fabrication` ORDER BY `created_at` ASC";
+        $result = $conn->query($sql);
+        return iterator_to_array($result);
+    }
+
+    public static function getEreChecker($conn)
+    {
+        $sql = "SELECT * FROM `erection` ORDER BY `created_at` ASC";
+        $result = $conn->query($sql);
+        return iterator_to_array($result);
+    }
+
     public static function getCatePage($page, $conn)
     {
         $sql = "SELECT * FROM `category` WHERE `page` = '$page'";
         $result = $conn->query($sql);
         return iterator_to_array($result);
     }
-    public static function getProductPage($page, $conn)
+    public static function getProductPage($conn)
     {
-        $sql = "SELECT * FROM `products` WHERE `category` = '$page'";
+        $getDATA = $_GET['data'];
+        $sql = "SELECT * FROM `products` WHERE `category` = '$getDATA'";
+        $result = $conn->query($sql);
+        return iterator_to_array($result);
+    }
+
+    public static function getFabrication($conn)
+    {
+        $getDATA = $_GET['data'];
+        $sql = "SELECT * FROM `fabrication` WHERE `category` = '$getDATA'";
+        $result = $conn->query($sql);
+        return iterator_to_array($result);
+    }
+    public static function getErection($conn)
+    {
+        $getDATA = $_GET['data'];
+        $sql = "SELECT * FROM `erection` WHERE `category` = '$getDATA'";
         $result = $conn->query($sql);
         return iterator_to_array($result);
     }
@@ -54,6 +84,22 @@ class Operations
     {
         $getID = $_GET['edit_id'];
         $sql = "SELECT * FROM `products` WHERE `id` = '$getID'";
+        $result = $conn->query($sql);
+        return $result ? $result->fetch_assoc() : null;
+    }
+
+    public static function getFab($conn)
+    {
+        $getID = $_GET['edit_id'];
+        $sql = "SELECT * FROM `fabrication` WHERE `id` = '$getID'";
+        $result = $conn->query($sql);
+        return $result ? $result->fetch_assoc() : null;
+    }
+
+    public static function getEre($conn)
+    {
+        $getID = $_GET['edit_id'];
+        $sql = "SELECT * FROM `erection` WHERE `id` = '$getID'";
         $result = $conn->query($sql);
         return $result ? $result->fetch_assoc() : null;
     }

@@ -312,6 +312,11 @@
             <!-- Statistics Counter Section End -->
 
             <!-- Services Slider Start -->
+            <?php
+                $conn = Database::getConnect();
+                $products = Operations::getFabChecker($conn);
+                if (!empty($products)) {
+            ?>
             <section class="wide-tb-100">
                 <div class="container">
                     <div class="row">
@@ -326,6 +331,9 @@
                         </div>
                         <!-- Heading End -->
 
+                        <?php
+                            foreach ($products as $pro) {
+                        ?>
                         <div class="col-sm-12">
                             <!-- Services Slider Start -->
                             <div class="owl-carousel owl-theme rounded-btn" id="home-services-slider">
@@ -333,10 +341,10 @@
                                 <div class="item">
                                     <div class="services-slider-content">
                                         <div class="service-img rounded">
-                                            <img src="images/services/service_img_1.jpg" alt="" />
+                                            <img src="images/<?= $pro['img'] ?>" alt="" />
                                         </div>
                                         <div class="serive-content">
-                                            <h3 class="h3-md txt-pink m-0">Plumbing</h3>
+                                            <h3 class="h3-md txt-pink m-0"><?= $pro['name'] ?></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -344,9 +352,13 @@
                             </div>
                             <!-- Services Slider Start -->
                         </div>
+                        <?php
+                            }
+                        ?>
                     </div>
                 </div>
             </section>
+            <?php } ?>
             <!-- Services Slider End -->
         </main>
 

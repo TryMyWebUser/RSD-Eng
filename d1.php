@@ -1,3 +1,12 @@
+<?php
+
+    include "libs/load.php";
+
+    $conn = Database::getConnect();
+    $products = Operations::getProductPage($conn)
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -46,15 +55,20 @@
 
 
                         <!-- Blog Items -->
+                        <?php
+                            if (!empty($products)) {
+                                foreach ($products as $pro) {
+                        ?>
                         <div class="col-sm-12 col-md-4 wow fadeInLeft" data-wow-duration="0" data-wow-delay="0.1s">
                             <div class="blog-wrap-light">
-                                <img src="images/blog/blog_post_1.jpg" alt="images">
+                                <img src="images/<?= $pro['img'] ?>" alt="Product Images">
                                 <div class="blog-content">
-                                    <h4 class="h4-md mb-3"><a>Mandating Solar Panels on New Homes</a></h4>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiumg</p>
+                                    <h4 class="h4-md mb-3"><a><?= $pro['title'] ?></a></h4>
+                                    <p><?= $pro['dec'] ?></p>
                                 </div>
                             </div>
                         </div>
+                        <?php } } else { echo "<p>Datas Not Found!</p>"; } ?>
                         <!-- Blog Items -->
 
                     </div>

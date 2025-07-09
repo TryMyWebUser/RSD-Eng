@@ -25,11 +25,11 @@
     </head>
 
     <body>
-        <!-- Begin page -->
-        <div class="wrapper">
-            <?php include "temp/sideheader.php" ?>
+        <?php include "temp/header.php" ?>
 
-            <?php include "temp/header.php" ?>
+        <div id="content">
+
+            <?php include "temp/sideheader.php" ?>
 
             <!-- ============================================================== -->
             <!-- Start Main Content -->
