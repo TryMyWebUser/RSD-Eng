@@ -8,7 +8,16 @@
             <li>
                 <a href="index.php"> <i class="bi bi-speedometer2"></i> <span>Dashboard</span> </a>
             </li>
-            <li class="menu-title">Operations</li><li class="menu-sub">
+            <li class="menu-title">Attendance</li>
+            <li class="menu-sub">
+                <a href="#"> <i class="bi bi-people"></i> <span>Branch Account</span> </a>
+                <ul>
+                    <li><a href="addBranch.php">Add Account</a></li>
+                    <li><a href="viewBranch.php">View Accounts</a></li>
+                </ul>
+            </li>
+            <li class="menu-title">Operations</li>
+            <li class="menu-sub">
                 <a href="#"> <i class="bi bi-tags"></i> <span>Category</span> </a>
                 <ul>
                     <li><a href="addCate.php">Add Category</a></li>

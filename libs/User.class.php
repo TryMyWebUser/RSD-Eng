@@ -345,6 +345,60 @@ class User
             return "Error occurred while saving data: " . $stmt->error;
         }
     }
+
+    // Attendance Functions
+    public static function branchLogin($username, $password, $branch)
+    {
+        Session::start();
+        $conn = Database::getConnect();
+        
+        $sql = "SELECT * FROM `users` WHERE `username` = '$username' AND `branch` = '$branch'";
+        $res = $conn->query($sql);
+        if ($res->num_rows === 1)
+        {
+            $row = $res->fetch_assoc();
+            if ($password === $row['password'])
+            {
+                Session::regenerate();
+                Session::set('branch', $branch);
+                Session::set('branch_user', $username);
+                header("Location: attendance/index.php");
+                exit;
+            }
+        }
+
+        return "Invalid Username and Password";
+    }
+
+    public static function setBranchAccount($branch, $user, $pass)
+    {
+        $conn = Database::getConnect();
+
+        // Insert data into database
+        $sql = "INSERT INTO `users` (`username`, `password`, `branch`, `created_at`)
+                VALUES ('$user', '$pass', '$branch', NOW())";
+
+        if ($conn->query($sql)) {
+            header("Location: viewBranch.php");
+            exit;
+        } else {
+            return "Error occurred while saving data: " . $conn->error;
+        }
+    }
+    public static function updateBranchAccount($getID, $branch, $user, $pass)
+    {
+        $conn = Database::getConnect();
+
+        // Update data into database
+        $sql = "UPDATE `users` SET `username` = '$user', `password` = '$pass', `branch` = '$branch', `created_at` = NOW() WHERE `id` = '$getID'";
+
+        if ($conn->query($sql)) {
+            header("Location: viewBranch.php");
+            exit;
+        } else {
+            return "Error occurred while saving data: " . $conn->error;
+        }
+    }
 }
 
 ?>

@@ -160,6 +160,7 @@
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	justify-content: center;
 }
 
 /*.btn-theme:before {
@@ -1567,6 +1568,7 @@ a[class*="link-"]:hover:before{
 }
 .rounded-field input[type="text"],
 .rounded-field input[type="email"],
+.rounded-field input[type="password"],
 .rounded-field select{	
 	border: 1px solid #dfdfdf;
 	padding: 10px 12px;
@@ -1581,6 +1583,7 @@ a[class*="link-"]:hover:before{
 }
 .rounded-field input[type="text"]:focus,
 .rounded-field input[type="email"]:focus,
+.rounded-field input[type="password"]:focus,
 .rounded-field select:focus{
 	box-shadow: none;
 }
@@ -1599,6 +1602,7 @@ a[class*="link-"]:hover:before{
 
 .gray-field.rounded-field input[type="text"],
 .gray-field.rounded-field input[type="email"],
+.gray-field.rounded-field input[type="password"],
 .gray-field.rounded-field select,
 .gray-field.rounded-field textarea{
 	border-radius: 0;

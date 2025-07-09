@@ -103,6 +103,23 @@ class Operations
         $result = $conn->query($sql);
         return $result ? $result->fetch_assoc() : null;
     }
+
+    // Attendance Operations
+    public static function getBranchUsers()
+    {
+        $conn = Database::getConnect();
+        $sql = "SELECT * FROM `users` ORDER BY `created_at` ASC";
+        $result = $conn->query($sql);
+        return iterator_to_array($result);
+    }
+    public static function getBranch()
+    {
+        $getID = $_GET['edit_id'];
+        $conn = Database::getConnect();
+        $sql = "SELECT * FROM `users` WHERE `id` = '$getID'";
+        $result = $conn->query($sql);
+        return $result ? $result->fetch_assoc() : null;
+    }
 }
 
 ?>

@@ -36,7 +36,7 @@
                             <a href="tel:8526335326">+91 8526335326</a>
                         </span>
                     </span>
-                    <a href="#" class="btn-theme bg-pink fw-6 square no-shadow">Attendance</a>
+                    <a href="attendance/login.php" class="btn-theme bg-pink fw-6 square no-shadow">Attendance</a>
                 </div>
             </div>
         </div>

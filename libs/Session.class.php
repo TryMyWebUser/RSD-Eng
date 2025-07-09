@@ -52,5 +52,15 @@ class Session
     {
         return isset($_SESSION['login_user']);
     }
+
+    public static function getBranchUser()
+    {
+        return Session::get('branch_user', 'Guest');
+    }
+
+    public static function isLoggedInBranch()
+    {
+        return isset($_SESSION['branch_user']);
+    }
 }
 ?>
